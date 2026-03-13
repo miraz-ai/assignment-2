@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>TechWave</title>
+    
 </head>
 <body>
-    
+    <header class="bg-[#1A0B2E] flex justify-between items-center p-4 text-amber-50">
+       <h1 class="text-[white] font-extrabold text-2xl ml-30">Tech<span class="bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span></h1>
+       <div class="">
+           <ul class="flex gap-5">
+               <a href=""><li>About</li></a> 
+               <a href=""><li>Episodes</li></a> 
+               <a href=""><li>Host</li></a> 
+            </ul>
+        </div>
+        <button class="bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 text-white p-[9px] px-5 rounded-4xl mr-40 cursor-pointer font-semibold">Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </header>
+    <main>
+        <!-- Hero Banner -->
+         <section  class="w-full overflow-hidden relative">
+                <img src="/assets/hero-bg.png" alt="Banner-Background Img" class="w-full h-full object-cover">
+                <div class="absolute flex flex-col justify-center items-center inset-0 gap-0">
+                    <div class="relative mb-28">
+                        <img src="/assets/hero-circle.png" alt="circle" class="w-[380px] object-contain ">
+                        <img src="/assets/microphone.png" class="absolute top-1/2 left-1/2 -translate-x-15 -translate-y-25 w-[120px]" alt="Microphone Img">
+                        <button class="bg-[#00FF88] px-3 py-1 rounded-3xl cursor-pointer absolute top-1/4 left-1/2 translate-x-25 -translate-y-16 text-xs font-bold text-black">New</button>
+                    </div>
+                        <h1 class="font-extrabold text-amber-50 text-4xl">TechWave</h1>
+                        <p class="text-[#9793A6]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <div class="flex gap-4 mt-5">
+                            <button class="bg-linear-to-r from-yellow-400 via-pink-500 to-purple-600 text-white px-4 py-2 rounded-3xl text-sm font-semibold flex items-center gap-2 cursor-pointer">
+                                <img src="/assets/spotify.png" alt="">
+                            </i> Listen On Spotify
+                        </button>
+                        <button class="border border-green-400 text-green-400 px-4 py-2 rounded-3xl text-sm font-semibold flex items-center gap-2 cursor-pointer">
+                        <img src="/assets/message.png" alt=""></i> Subscribe
+                        </button>
+                   </div>
+                </div>
+            </section>
+            <!-- Podcast -->
+
+            <section class="bg-[#1A0B2E]">
+                <h1">About The Podcast</h1>
+                <p class="text-[#9793A6]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.</p>
+                <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+            </section>
+            
+    </main>
 </body>
 </html>
