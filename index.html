@@ -11,31 +11,31 @@
     
 </head>
 <body>
-    <header class="bg-[#1A0B2E] flex justify-between items-center p-4 text-amber-50">
-       <h1 class="text-[white] font-extrabold text-2xl ml-30">Tech<span class="bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span></h1>
+    <header class="bg-[#1A0B2E] flex flex-col gap-5 lg:flex-row justify-between items-center p-4 text-amber-50">
+       <h1 class="text-[white] font-extrabold text-2xl gap-x-7 lg:ml-30">Tech<span class="bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span></h1>
        <div class="">
-           <ul class="flex gap-5">
+           <ul class="flex flex-col gap-2 lg:flex-row lg:gap-5 lg:ml-40">
                <a href=""><li>About</li></a> 
                <a href=""><li>Episodes</li></a> 
                <a href=""><li>Host</li></a> 
             </ul>
         </div>
-        <button class="bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 text-white p-[9px] px-5 rounded-4xl mr-40 cursor-pointer font-semibold">Subscribe <i class="fa-solid fa-arrow-right"></i>
+        <button class="bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 text-white p-[9px] px-5  rounded-4xl mr-40 cursor-pointer font-semibold ml-35">Subscribe <i class="fa-solid fa-arrow-right"></i>
         </button>
     </header>
     <main>
         <!-- Hero Banner -->
          <section  class="w-full overflow-hidden relative">
-                <img src="/assets/hero-bg.png" alt="Banner-Background Img" class="w-full h-full object-cover">
-                <div class="absolute flex flex-col justify-center items-center inset-0 gap-0">
-                    <div class="relative mb-28">
-                        <img src="/assets/hero-circle.png" alt="circle" class="w-[380px] object-contain ">
-                        <img src="/assets/microphone.png" class="absolute top-1/2 left-1/2 -translate-x-15 -translate-y-25 w-[120px]" alt="Microphone Img">
-                        <button class="bg-[#00FF88] px-3 py-1 rounded-3xl cursor-pointer absolute top-1/4 left-1/2 translate-x-25 -translate-y-16 text-xs font-bold text-black">New</button>
+                <img src="/assets/hero-bg.png" alt="" class="w-full h-full object-cover min-h-[650px]">
+                <div class="absolute flex flex-col justify-center items-center inset-0 gap-0 px-4">
+                    <div class="relative mb-16 lg:mb-28">
+                        <img src="/assets/hero-circle.png" alt="" class="w-[300px] lg:w-[380px] object-contain ">
+                        <img src="/assets/microphone.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100px] lg:w-[120px]">
+                        <button class="bg-[#00FF88] px-3 py-1 rounded-3xl cursor-pointer absolute translate-x-15 top-1/4 left-1/2 lg:translate-x-25 -translate-y-16 text-xs font-bold text-black">New</button>
                     </div>
-                        <h1 class="font-extrabold text-amber-50 text-5xl">TechWave</h1>
-                        <p class="text-[#9793A6] mt-4">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                        <div class="flex gap-4 mt-5">
+                        <h1 class="font-extrabold text-amber-50 text-4xl lg:text-5xl text-center">TechWave</h1>
+                        <p class="text-[#9793A6] mt-4 text-base text-center px-6 lg:px-0">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                        <div class="flex felx-row lg:fekx-col gap-4 mt-5">
                             <button class="bg-linear-to-r from-yellow-400 via-pink-500 to-purple-600 text-white px-4 py-2 rounded-3xl text-sm font-semibold flex items-center gap-2 cursor-pointer">
                                 <img src="/assets/spotify.png" alt="">
                             </i> Listen On Spotify
@@ -61,7 +61,7 @@
                     </div>
                     <hr class="border-[#9793A6] mx-auto w-[1080px] opacity-30 p-10">
 
-                    <div class=" grid grid-cols-4 text-center"> 
+                    <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-center"> 
                         <div>
                             <h1 class="text-[#00FF88] text-5xl font-extrabold italic">150k+</h1>
                             <p class="text-[#9793A6] mt-2.5">MONTHLY LISTENERS</p>
@@ -88,27 +88,27 @@
             </section>
             
             <!-- Features -->
-             <section class="bg-[#230E3D] text-center px-10 py-16 flex flex-col justify-center items-center">
+             <section class="bg-[#230E3D] text-center px-10 py-16 flex flex-col justify-center items-center overflow-hidden">
                 <h1 class="text-white text-4xl font-bold p-14">Why Choose TechWave</h1>
-                <div class="grid grid-cols-3 grid-rows-3 gap-6 w-[880px] h-[600px] text-left">
-
-                    <div class=" bg-[#2A0F4D] rounded-3xl p-10 max-w-4xl mx-auto row-span-2">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full max-w-[880px] text-left">
+                    <div class=" bg-[#2A0F4D] rounded-3xl p-10 max-w-4xl mx-auto row-span-1 lg:row-span-2">
                         <img class="w-8" src="/assets/headphone.png" alt="">
                         <br>
                         <h1 class="text-[#FFFFFF] font-semibold mb-2">Premium Audio Quality</h1>
                         <small class="text-[#9793A6]">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</small>
                     </div>
-                    <div class="bg-[#2A0F4D] rounded-3xl p-10 col-span-2">
+                    <div class="bg-[#2A0F4D] rounded-3xl p-10 col-span-1 lg:col-span-2">
                         <img class="w-8" src="/assets/device.png" alt="">
                         <h1 class="text-[#FFFFFF] font-semibold">Mobile Friendly</h1>
                         <small class="text-[#9793A6]">Listen on the go with seamless mobile experience and offline downloads.</small>
                     </div>
-                    <div class="bg-[#2A0F4D] rounded-3xl p-10 col-span-2">
+                    <div class="bg-[#2A0F4D] rounded-3xl p-10 col-span-1 lg:col-span-2">
                         <img class="w-8" src="/assets/location.png" alt="">
                         <h1 class="text-[#FFFFFF] font-semibold">Global Community</h1>
                         <small class="text-[#9793A6]">Connect with tech enthusiasts from over 120 countries worldwide.</small>
                     </div>
-                    <div class=" bg-[#2A0F4D] rounded-3xl p-10 col-span-2">
+                    <div class=" bg-[#2A0F4D] rounded-3xl p-10
+                    col-span-1 lg:col-span-2">
                             <i class="fa-solid fa-bolt text-2xl bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent"></i>
 
                         <h1 class="text-[#FFFFFF] font-semibold">Exclusive Interviews</h1>
@@ -123,9 +123,9 @@
                 
              </section>
              <!-- Featured Card -->
-              <section class="bg-[#1A0B2E] px-10 py-16">
+              <section class="bg-[#1A0B2E] lg:px-10 py-16">
                 <h1 class="text-white text-4xl font-bold p-14 text-center">Featured Episodes</h1>
-                 <div class="flex justify-center gap-8">
+                 <div class="flex flex-col lg:flex-row  justify-center gap-8 items-center">
                     <div class="bg-[#250D44] w-[350px] rounded-3xl h-[510px]">
                         <iframe class="rounded-3xl rounded-b-none" width="350" height="300" src="https://www.youtube.com/embed/7ARBJQn6QkM?si=XBWjHGu3UJZf0YtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="p-4">
@@ -133,7 +133,7 @@
                             <p class="text-[#9793A6]">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade. </p>
                             <div class="flex gap-2 mt-2">
                                 <img src="/assets/clock.png" class="h-6" alt="">
-                                <p class="text-[#00FF88]">1 hour 2 min</p>
+                                <p class="text-[#00FF88]">1 hour 3 min</p>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                             <p class="text-[#9793A6]">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade. </p>
                             <div class="flex gap-2 mt-2">
                                 <img src="/assets/clock.png" class="h-6" alt="">
-                                <p class="text-[#00FF88]">1 hour 2 min</p>
+                                <p class="text-[#00FF88]">1 hour 5 min</p>
                             </div>
                         </div>
                     </div>
@@ -164,15 +164,15 @@
             <!-- Meet The Host -->
 
             <section class="bg-[#1A0B2E] px-10 py-16">
-                <h1 class="text-white text-4xl font-bold p-14 text-center">Meet The Host</h1>
-                <div class="bg-[#250D44] rounded-4xl flex gap-4 mx-auto w-7xl justify-center items-center">
+                <h1 class="text-white text-3xl lg:text-4xl font-bold p-14 text-center">Meet The Host</h1>
+                <div class="bg-[#250D44]  rounded-4xl flex flex-col text-center p-4 lg:flex-row gap-4 mx-auto lg:w-7xl justify-center items-center">
                     <img src="/assets/host.png" class="p-4" alt="">
                     <div class="space-y-3 mt-10">
-                        <h1 class="text-white text-[20px] font-bold">Alex Kumar</h1>
-                        <p class="text-[#9793A6]">
+                        <h1 class="text-white lg:text-[20px] font-bold lg:text-left">Alex Kumar</h1>
+                        <p class="text-[#9793A6] lg:text-left">
                             Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, <br>working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and<br> practical advice for anyone looking to grow in tech.
                         </p>
-                        <div class="flex gap-4 mt-4">
+                        <div class="flex justify-center lg:justify-start gap-4 mt-4">
                             <img src="/assets/linkedin.png" alt=""><img src="/assets/x.png" alt=""><img src="/assets/instagram.png" alt=""><img src="/assets/youtube.png" alt="">
                         </div>
                     </div>
@@ -181,28 +181,29 @@
     </main>
     <footer class="">
         <div class="relative">
-            <img src="/assets/footer-bg.png" class="w-full" alt="">
-            <div class="absolute flex flex-col justify-center items-center inset-0 gap-0">
-                <h1 class="relative right-28 bottom-12 translate-x-12 text-[white] font-extrabold text-8xl ml-30">Tech<span class="bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent ">Wave</span></h1>
-                <div class="flex gap-15 relative bottom-4 translate-y-2">
-                    <div class="flex gap-3">
+            <img src="/assets/footer-bg.png" class="w-full h-[250px] sm:h-[280px] lg:h-auto object-cover" alt="">
+            <div class="absolute flex flex-col justify-center items-center inset-0 gap-3">
+                <h1 class="text-white font-extrabold text-4xl sm:text-5xl lg:text-8xl">Tech<span class="bg-linear-to-br from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent ">Wave</span></h1>
+                
+                <div class="flex flex-wrap justify-center gap-x-[58px] gap-y-3">
+                    <div class="flex flex-wrap justify-center gap-x-8 gap-y-3">
                         <a href=""><img class="h-6" src="/assets/spotify.png" alt=""></a>
                         <p class="text-[#9793A6]">Spotify</p>
                     </div>
-                    <div class="flex gap-3">
-                        <a href=""><img class="h-6" src="/assets/apple-podcast.png" alt=""></a>
+                    <div class="flex gap-2 items-center">
+                        <a href=""><img class="h-5 lg:h-6" src="/assets/apple-podcast.png" alt=""></a>
                         <p class="text-[#9793A6] ">Apple Podcast</p>
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-2 items-center">
                         <a href=""><img class="h-6" src="/assets/youtube-podcast.png" alt=""></a>
                         <p class="text-[#9793A6]">YouTube</p>
                     </div>
-                    <div class="flex gap-3">
-                        <a href=""><img class="h-6" src="/assets/twitter.png" alt=""></a>
+                    <div class="flex gap-2 items-center">
+                        <a href=""><img class="h-5 lg:h-6" src="/assets/twitter.png" alt=""></a>
                         <p class="text-[#9793A6] ">Twitter</p>
                     </div>
                 </div>
-                <p class="text-[#9793A6] mt-4">&copy; 2026 TechWave Podcast. All rights reserved.</p>
+                <p class="text-[#9793A6] mt-4 sm:text-sm text-center px-4">&copy; 2026 TechWave Podcast. All rights reserved.</p>
             </div>
         </div>
     </footer>
